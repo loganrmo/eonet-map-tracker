@@ -1,70 +1,14 @@
-# EONET Mapping Tracker: An Environmental Event Map
+# EONET Mapping Tracker: An Environmental Event Map 🌎
 
-EONET Mapping Tracker tracks natural events and disasters. It is powered by NASA's API and uses Google Maps to map out the current whereabouts of natural events, including wildfires and storms.
+The EONET Mapping Tracker tracks natural events and disasters. It is powered by NASA's API and uses Google Maps to map out the current whereabouts of natural events, including wildfires, volcanos, storms, and icebergs. It was built in React and makes use of Fetch, ES6, and a variety of technologies. It is currently not deployed but the source code is available.
 
-## Available Scripts
+![Screenshot](/ss.png)
 
-In the project directory, you can run:
 
-### `npm start`
+## Development
+Clone this repository and `cd` to the project directory. First, run `npm install` to install all dependencies and libraries, after which you can run `npm start` in order to run in development mode. By default, it should be live on Port 3000.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## About the Project
+This was a project that interested me because it mapped a variety of natural events directly to a map that everyone is familiar with, and it is re-rendered everytime the site is visited, allowing for real-time mapping to see what is going on directly from the Earth Observatory Natural Events Tracking system. It is not currently deployed due to budgeting limitation with the Google API. 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Originally, I followed a tutorial that taught me how to call an API and how to display items on the Map, however I extended it to display a variety of events, I added menu functionality, dynamic location based on where the user is located, implemented a better loading screen, and a new color scheme as well as my own CSS for design. Due to the fact that the API is simplistic, I implemented a backend with Node and Express but found there was no real performance increase by processing the API call in the backend, so ultimately, I scrapped that idea. 
