@@ -2,6 +2,13 @@
 
 The EONET Mapping Tracker tracks natural events and disasters. It is powered by NASA's API and uses Google Maps to map out the current whereabouts of natural events, including wildfires, volcanos, storms, and icebergs. It was built in React and makes use of Fetch, ES6, and a variety of technologies. It is currently not deployed but the source code is available.
 
+## Features:
+- Takes user location to set default map view
+- Immediately fetches new data from NASA's Earth Observatory Natural Event Tracking system when loaded to ensure accuracy
+- Loading splash screen implemented to ensure application runs smoothly when first loaded
+- Uses the Google Maps API as well as Material Design Icons 
+- Written in React, styling is done in pure CSS
+
 ![Screenshot1](/screenshots/ss.png)
 ![Screenshot2](/screenshots/ss2.PNG)
 ![Screenshot3](/screenshots/ss3.PNG)
